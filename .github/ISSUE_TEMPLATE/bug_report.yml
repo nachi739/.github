@@ -8,7 +8,7 @@ body:
     attributes:
       label: "説明"
       description: 問題の明確な説明を入力してください。
-      placeholder: インシデントの簡潔で明確な説明...
+      placeholder: 問題の簡潔で明確な説明...
     validations:
       required: true
   - type: textarea
@@ -18,30 +18,11 @@ body:
       description: 問題発生に至る操作手順を入力してください。
       value: |
         1. Go to '...'
-        2. Click on '....'
-        3. Scroll down to '....'
+        2. Click on '...'
+        3. Scroll down to '...'
         4. See error
-      render: bash
     validations:
       required: true
-  - type: textarea
-    id: screenshot
-    attributes:
-      label: "スクリーンショット"
-      description: 必要に応じて、問題の説明に役立つスクリーンショットを追加してください。
-      value: |
-        ![DESCRIPTION](LINK.png)
-      render: bash
-    validations:
-      required: false
-  - type: textarea
-    id: logs
-    attributes:
-      label: "ログ"
-      description: 関連するログ出力をコピーして貼り付けてください。（これは自動的にコードにフォーマットされるため、バッククォートは必要ありません。）
-      render: bash
-    validations:
-      required: false
   - type: dropdown
     id: browsers
     attributes:
@@ -55,7 +36,7 @@ body:
         - Opera
         - Safari
     validations:
-      required: false
+      required: true
   - type: dropdown
     id: os
     attributes:
@@ -67,7 +48,7 @@ body:
         - Linux
         - Mac
     validations:
-      required: false
+      required: true
   - type: textarea
     id: solution
     attributes:
