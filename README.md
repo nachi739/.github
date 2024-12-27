@@ -3,3 +3,5 @@
 
 # 管理しているTemplate
 - Pull Request
+- Issue
+  - Bug_Report
